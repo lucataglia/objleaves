@@ -1,6 +1,6 @@
 {
   "name": "objleaves",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A util method that returns all object leaves",
   "main": "./dist/index.js",
   "scripts": {

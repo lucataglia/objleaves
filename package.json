@@ -1,0 +1,26 @@
+{
+  "name": "getleaves",
+  "version": "1.0.0",
+  "description": "A util method that returns all object leaves",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "node ./node_modules/parcel-bundler/bin/cli build ./src/index.js --out-dir ./dist/",
+    "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "Luca Tagliabue (https://github.com/lucataglia)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "isobject": "^4.0.0"
+  }
+}

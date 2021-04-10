@@ -8,11 +8,6 @@
     "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix",
     "test": "jest"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn test"
-    }
-  },
   "repository": {
     "type": "git",
     "url": ""
@@ -30,7 +25,6 @@
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "husky": "^6.0.0",
     "isobject": "^4.0.0"
   }
 }

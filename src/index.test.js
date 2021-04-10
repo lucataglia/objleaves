@@ -1,4 +1,4 @@
-import objectLeaves from './index';
+import objLeaves from './index';
 
 const src = {
   foo: 'bar',
@@ -64,22 +64,22 @@ const expectedReadme = [
   'people[0].isHappy',
 ];
 
-test('objectLeaves must get all leaves', () => {
-  const actual = objectLeaves(src);
-  const actualReadme = objectLeaves(srcReadme);
+test('objLeaves must get all leaves', () => {
+  const actual = objLeaves(src);
+  const actualReadme = objLeaves(srcReadme);
 
   expect(actual.sort()).toEqual(expected.sort());
   expect(actualReadme.sort()).toEqual(expectedReadme.sort());
 });
 
-test('objectLeaves must return an empty array', () => {
-  const stringValue = objectLeaves('ciao');
-  const numberValue = objectLeaves(21);
-  const booleanValue = objectLeaves(true);
-  const emptyArray = objectLeaves([]);
-  const emptyObject = objectLeaves({});
-  const nullObject = objectLeaves(null);
-  const undefinedValue = objectLeaves(undefined);
+test('objLeaves must return an empty array', () => {
+  const stringValue = objLeaves('ciao');
+  const numberValue = objLeaves(21);
+  const booleanValue = objLeaves(true);
+  const emptyArray = objLeaves([]);
+  const emptyObject = objLeaves({});
+  const nullObject = objLeaves(null);
+  const undefinedValue = objLeaves(undefined);
 
   expect(stringValue).toEqual([]);
   expect(numberValue).toEqual([]);

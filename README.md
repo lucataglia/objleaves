@@ -1,4 +1,4 @@
-# objectLeaves
+# objleaves
 A javascript util method that return all the leaves path of an object.
 
 ## Example

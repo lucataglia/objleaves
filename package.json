@@ -1,5 +1,5 @@
 {
-  "name": "objectleaves",
+  "name": "objleaves",
   "version": "0.0.1",
   "description": "A util method that returns all object leaves",
   "main": "./dist/index.js",

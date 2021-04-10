@@ -1,5 +1,15 @@
 # objleaves
-A javascript util method that return all the leaves path of an object.
+A javascript util method that return all the leaves path of an object. That can be useful when you need the leaves path to implement some custom logic on you JSON using lodash get/set methods.
+
+## Install with YARN
+```
+yarn add objleaves
+```
+
+## Install with NPM
+```
+npm i objleaves
+```
 
 ## Example
 ```javascriot

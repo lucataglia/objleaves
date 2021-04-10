@@ -3,8 +3,10 @@
   "env": {
     "browser": true,
     "es6": true,
-    "worker": true
+    "worker": true,
+    "jest/globals": true
   },
+  "plugins": ["jest"],
   "parserOptions": {
     "ecmaVersion": 10,
     "sourceType": "module"

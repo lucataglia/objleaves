@@ -1,6 +1,6 @@
 {
   "name": "objectleaves",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A util method that returns all object leaves",
   "main": "./dist/index.js",
   "scripts": {
@@ -10,9 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/lucataglia/objectLeaves"
   },
-  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/lucataglia/objectLeaves/issues"
+  },
+  "keywords": [
+    "leaf",
+    "leaves",
+    "object",
+    "object-leaves",
+    "objectleaves"
+  ],
   "author": "Luca Tagliabue (https://github.com/lucataglia)",
   "license": "MIT",
   "devDependencies": {

@@ -42,9 +42,34 @@ const expected = [
   'true',
 ];
 
+const srcReadme = {
+  isNested: true,
+  people: [{
+    name: 'Jane',
+    lastName: 'Doe',
+    dogs: [
+      { name: 'Skippy' },
+      { name: 'Lessie' },
+    ],
+    isHappy: true,
+  }],
+};
+
+const expectedReadme = [
+  'isNested',
+  'people[0].name',
+  'people[0].lastName',
+  'people[0].dogs[0].name',
+  'people[0].dogs[1].name',
+  'people[0].isHappy',
+];
+
 test('objectLeaves must get all leaves', () => {
   const actual = objectLeaves(src);
+  const actualReadme = objectLeaves(srcReadme);
+
   expect(actual.sort()).toEqual(expected.sort());
+  expect(actualReadme.sort()).toEqual(expectedReadme.sort());
 });
 
 test('objectLeaves must return an empty array', () => {
